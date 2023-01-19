@@ -290,7 +290,7 @@ hi! link  Underlined                LeuvenLightBlueUnderline    " text that stan
 
 hi! link  Preproc                   LeuvenLiveBlueHighlight     " (*) generic preprocessor
 
-hi! link  Type                      LeuvenFg                    " (*) int, long, char, etc.
+hi! link  Type                      LeuvenLightBlueBg           " (*) int, long, char, etc.
 
 hi! link  Special                   LeuvenFg                    " (*) any special symbol
 
@@ -323,6 +323,11 @@ hi! link  DiagnosticFloatingInfo    LeuvenGrayBg                " used to color 
 hi! link  DiagnosticFloatingHint    LeuvenGrayBg                " used to color "Hint" diagnostic messages in diagnostics float.
 hi! link  DiagnosticSignInfo        LeuvenComment               " used for "Info" signs in sign column.
 hi! link  DiagnosticSignHint        LeuvenComment               " used for "Hint" signs in sign column.
+
+" Tree-sitter
+if has('nvim')
+hi! link @symbol                    LeuvenDarkMagenta
+endif
 " }}}
 
 " ansi {{{
